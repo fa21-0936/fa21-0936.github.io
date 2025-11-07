@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Abad">
+    <meta name="description" content="Sitio de colección de monedas: descubre monedas raras, información y noticias del mundo numismático.">
+    <meta name="keywords" content="monedas, colección, numismática, monedas raras, monedas antiguas">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1178/1178795.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Colección de Monedas</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <a class="navbar-brand" href="index.html">Colección de Monedas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="enlaces.html">Enlaces de Interés</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="politica.html">Políticas</a></li>
+                <li class="nav-item">
+                    <button id="modoOscuroBtn" class="btn btn-sm btn-dark ms-2" onclick="toggleDarkMode()">Modo Oscuro</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <header class="container text-center my-5">
+        <h1 class="display-4">Bienvenido a Colección de Monedas</h1>
+        <p class="lead"> La historia a través de las monedas.</p>
+    </header>
+
+        <!-- IMAGEN DESTACADA -->
+    <section class="my-4 text-center">
+    <img src="https://preview.redd.it/ipv1knlxf8c51.jpg?width=1080&crop=smart&auto=webp&s=800984413ca548a5326dd3ef4bc1ff7d811b9f8b" 
+        class="img-fluid rounded" 
+        alt="Colección de monedas">
+    </section>
+
+    <!-- INFORMACIÓN SOBRE NUMISMÁTICA -->
+    <section>
+        <div class="container py-4">
+            <h2 class="titulo-seccion">Concepto de Numismática</h2>
+            <p>
+            La numismática es el estudio y coleccionismo de monedas, medallas y billetes. 
+            Desde las primeras acuñaciones en el siglo VII a.C., las monedas han sido no 
+            solo un medio de intercambio, sino también un reflejo de la historia, la cultura 
+            y el arte de las civilizaciones.
+            </p>
+        </div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <div id="carouselMonedas" class="carousel slide container mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.numiscorner.com/cdn/shop/files/1201954A.jpg?v=1759363131" class="d-block w-100" alt="Moneda 10 Centavos RD 1937">
+                <div class="carousel-caption">
+                    <h5>10 Centavos República Dominicana, 1937</h5>
+                    <p>Moneda de plata de 10 centavos emitida en 1937.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.numiscorner.com/cdn/shop/products/1061796A.jpg?v=1699303433" class="d-block w-100" alt="Moneda España Ferdinand VII 8 Maravedis 1821">
+                <div class="carousel-caption">
+                    <h5>España Ferdinand VII, 8 Maravedis, 1821</h5>
+                    <p>Moneda de cobre de la época de Ferdinand VII.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.numiscorner.com/cdn/shop/products/508467A_3e6c4287-19f1-4129-b38a-94202530900d.jpg?v=1692801372" class="d-block w-100" alt="Moneda Italia Charles VIII Cavallo">
+                <div class="carousel-caption">
+                    <h5>Italia, Charles VIII, Cavallo</h5>
+                    <p>Moneda histórica de Italia durante el reinado de Charles VIII.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMonedas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMonedas" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+    <!-- MÁS INFORMACIÓN -->
+    <section class="container mb-5">
+        <h2>Tipos de Monedas</h2>
+        <p>Existen monedas modernas, antiguas y conmemorativas. Cada una tiene un valor histórico y coleccionable diferente.</p>
+        <ul>
+            <li>Monedas modernas</li>
+            <li>Monedas antiguas</li>
+            <li>Monedas conmemorativas</li>
+        </ul>
+
+        <h3>Razones para coleccionar</h3>
+        <ol>
+            <li>Valor histórico</li>
+            <li>Valor numismático</li>
+            <li>Interés artístico</li>
+        </ol>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+    <div class="container">
+        <p>© 2025 Colección de Monedas. Francisco Abad.</p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

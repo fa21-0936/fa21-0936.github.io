@@ -1,0 +1,185 @@
+
+/* Estilos */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ececec;
+    color: #212529;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #d9e6f2;
+    transition: background-color 0.5s;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Botones */
+button {
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #c7d7e0;
+    color: #212529;
+    padding: 1.5rem 0;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+body.dark-mode a {
+    color: #66b2ff;
+}
+
+body.dark-mode a:hover {
+    color: #3399ff;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;       
+    max-height: 500px; 
+    background-color: rgba(165, 165, 165, 0.5);
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f3f8ff;
+}
+
+.card:hover img {
+    filter: brightness(1.1);
+}
+
+body.dark-mode .card {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .card:hover {
+    background-color: #252525;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .card,
+body.dark-mode .card p,
+body.dark-mode .card h5,
+body.dark-mode .card a {
+    color: #f0f0f0 !important;
+}
+
+body.dark-mode .card a:hover {
+    color: #66b2ff !important;
+}
+
+/* Alerta */
+.alert {
+    margin-top: 10px;
+}
+
+/* Modal modo oscuro */
+body.dark-mode .modal-content {
+    background-color: #1e1e1e !important;
+    color: #eaeaea !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #333 !important;
+}
+
+body.dark-mode .modal-title {
+    color: #f5f5f5 !important;
+}
+
+body.dark-mode .modal-body p,
+body.dark-mode .modal-body {
+    color: #ddd !important;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(250%) !important;
+}
+
+body.dark-mode .modal .btn-secondary {
+    background-color: #343434 !important;
+    border-color: #444 !important;
+    color: #e6e6e6 !important;
+}
+body.dark-mode .modal .btn-secondary:hover {
+    background-color: #3f3f3f !important;
+}
